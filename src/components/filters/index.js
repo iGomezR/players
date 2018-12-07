@@ -7,7 +7,7 @@ const Filters = props => {
   return (
     <Row>
       <Col>
-        <Form className="filters-form" inline style={Styles.Form} onSubmit={props.handleFilter}>
+        <Form className="filters-form" inline style={Styles.Form}>
           <FormGroup>
             <Input
               placeholder="Player name"
@@ -42,7 +42,7 @@ const Filters = props => {
               onBlur={event => props.handleFilter(event.target.id, event.target.value)}
             />
           </FormGroup>
-          <Button className="button" color="success" type="submit">
+          <Button className="button" color="success" onClick={e => e.preventDefault()}>
             Submit
           </Button>
         </Form>

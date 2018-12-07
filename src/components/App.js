@@ -46,18 +46,12 @@ class App extends Component {
     })
   }
 
-  handleFilterSubmit = (e) => {
-    e.preventDefault();
-    this.props.fetchPlayerList();
-  }
-
   render() {
     return (
       <div>
         <Header color='primary' />
         <Container style={Styles.Container}>
           <Filters 
-            onSubmit={this.handleFilterSubmit}
             handleFilter={this.handleFilter}
             positions={this.props.positions}
           />
