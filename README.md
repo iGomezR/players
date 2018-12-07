@@ -1,5 +1,9 @@
+
+# Players
 Basic implementation to react + redux and jest.
 
+## Requirements
+- Node v11.2.0
 
 ## Getting Started
 
