@@ -71,8 +71,8 @@ const Styles = {
 }
 
 const mapStateToProps = state => {
-  const { players, positions, name, position, age } = state;
-  return { players, positions, name, position, age };
+  const { players, positions } = state;
+  return { players, positions };
 }
 
 export default connect(mapStateToProps, {
